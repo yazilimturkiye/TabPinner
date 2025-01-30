@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Pinner</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 500px;
+            border: 1px solid #ccc;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: orange;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .button {
+            font-size: 40px;
+            display: contents;
+            font-weight: bold;
+            margin-left: 10px;
+            align-items: stretch;
+        }
+        .header h1 {
+            font-size: 27px;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .content p, .content ul {
+            margin: 0 0 15px;
+            text-align: left;
+        }
+        .content ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+        }
+        .footer .version {
+            margin-left: 10px;
+        }
+        .footer .website {
+            margin-right: 10px;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .slider {
+            background-color: #c35400;
+        }
+        input:focus + .slider {
+            box-shadow: 0 0 1px #c35400;
+        }
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+    </style>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="button">
+                <label class="switch">
+                    <input type="checkbox" checked id="extensionSwitch">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <h1>Tab Pinner</h1>
+        </div>
+        <div class="content">
+            <p>Tab Pinner extension will automatically open all new tabs you open in your Chrome browser as pins.</p>
+            <ul>
+                <li>No action is required for this extension to work.</li>
+                <li>Will run in the background.</li>
+                <li>Completely free and no any ads.</li>
+            </ul>
+            <p>Thank you for choosing our extension. You can use <a href="https://www.yazilimturkiye.com/iletisim" target="_blank">this address</a> to contact us or report a problem.</p>
+        </div>
+        <div class="footer">
+            <div class="version">v2.0</div>
+            <div class="website"><a href="https://www.yazilimturkiye.com/" target="_blank">yazilimturkiye.com</a></div>
+        </div>
+    </div>
+</body>
+</html>
