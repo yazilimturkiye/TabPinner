@@ -5,6 +5,9 @@ Gizliliğinize önem verin! Tab Pinner ile tüm Chrome sekmeleriniz otomatik ola
   <img width="400" height="250" src="https://www.yazilimturkiye.com/wp-content/uploads/2024/04/tab-pinner.jpg">
 </p>
 
+### Tab Pinner Eklentisi Nedir?
+Tab Pinner ile tüm Chrome sekmeleriniz otomatik olarak "pin" modunda açılır. Bu şekilde istenmeyen gözler yalnızca sekmelerdeki web sitesi logolarını görebilir.
+
 ### Sistem gereksinimleri
 Güncel sürümde bir Google Chrome tarayıcısı.
 
